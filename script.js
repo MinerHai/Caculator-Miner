@@ -1,15 +1,10 @@
-function appendToDisplay(value) {
-  document.getElementById('display').value += value;
+function number(value){
+  document.form1.result.value +=value;
+}
+function cle(value){
+  document.form1.result.value =value;
+}
+function evalua(){
+  document.form1.result.value = eval(document.form1.result.value);
 }
 
-function clearDisplay() {
-  document.getElementById('display').value = '';
-}
-
-function calculate() {
-  try {
-    document.getElementById('display').value = eval(document.getElementById('display').value);
-  } catch (error) {
-    document.getElementById('display').value = 'Error';
-  }
-}
